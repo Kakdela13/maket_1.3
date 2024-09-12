@@ -1,0 +1,159 @@
+body {
+  font-family: "TT Lakes", sans-serif;
+  /*min-width: 320px;*/
+  margin: 0;
+  background: #f8f8f8;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.header {
+  height: 88px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.header__left {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-left: 16px;
+}
+
+.header__right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-right: 24px;
+}
+.services__title {
+  margin-top: 24px;
+  margin-right: 16px;
+  display: flex;
+  gap: 24px;
+}
+.services {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  align-items: center;
+}
+.services__actions {
+  display: flex;
+  gap: 16px;
+  margin-right: 16px;
+}
+.services__actions button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navigate {
+  display: flex;
+  overflow: auto;
+  /*min-width: 300px;*/
+  text-align: center;
+  gap: 16px;
+  padding-left: 16px;
+  margin-top: 24px;
+  flex-wrap: nowrap;
+}
+
+.navigate li {
+  flex-shrink: 0;
+  padding: 10px;
+}
+
+.navigate li:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.navigate li:nth-child(1) {
+  border: 2px solid #41f6d7;
+  border-radius: 3px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.navigate::-webkit-scrollbar {
+  display: none;
+}
+
+.content__next {
+  display: flex;
+  margin-left: 16px;
+}
+
+.content__main-img {
+  min-width: 320px;
+  width: 100%;
+}
+.content p {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .header__right li:nth-child(-n + 4) {
+    display: none;
+  }
+  .services__actions {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  .content {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .content__main-img {
+    min-width: 360px;
+    flex-grow: 5;
+  }
+  .services__actions {
+    display: none;
+  }
+}
+
+@media (min-width: 1120px) and (max-width: 1440px) {
+  .header {
+    display: none;
+  }
+  .content {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .content__main-img {
+    min-width: 531px;
+    flex-grow: 5;
+  }
+  .navigate {
+    flex-wrap: wrap;
+  }
+}
