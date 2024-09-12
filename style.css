@@ -1,11 +1,8 @@
 body {
   font-family: "TT Lakes", sans-serif;
-  /*min-width: 320px;*/
   margin: 0;
   background: #f8f8f8;
 }
-
-/*TEST*/
 
 ul {
   list-style-type: none;
