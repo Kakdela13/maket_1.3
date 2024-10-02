@@ -125,6 +125,10 @@ button {
   .services__actions {
     display: none;
   }
+  .services__title {
+    flex-wrap: nowrap;
+    min-width: 360px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1119px) {
@@ -141,7 +145,7 @@ button {
   }
 }
 
-@media (min-width: 1120px) and (max-width: 1440px) {
+@media (min-width: 1120px) and (max-width: 2560px) {
   .header {
     display: none;
   }
